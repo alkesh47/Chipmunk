@@ -1,19 +1,27 @@
-$('#carouselFade').carousel({
-  interval: 2000,
-  pause: false
-});
+// $('#carouselFade').carousel({
+//   interval: 2000,
+//   pause: false
+// });
+//
+// var $videoSrc;
+// $('.video-btn').click(function() {
+//     $videoSrc = $(this).data( "src" );
+// });
+// // when the modal is opened autoplay it
+// $('#myModal').on('shown.bs.modal', function (e) {
+// // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+// $("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" );
+// })
+// // stop playing the youtube video when I close the modal
+// $('#myModal').on('hide.bs.modal', function (e) {
+//     // a poor man's stop video
+//     $("#video").attr('src',$videoSrc);
+// })
 
-var $videoSrc;
-$('.video-btn').click(function() {
-    $videoSrc = $(this).data( "src" );
-});
-// when the modal is opened autoplay it
-$('#myModal').on('shown.bs.modal', function (e) {
-// set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-$("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" );
-})
-// stop playing the youtube video when I close the modal
-$('#myModal').on('hide.bs.modal', function (e) {
-    // a poor man's stop video
-    $("#video").attr('src',$videoSrc);
+
+$('#slider').rbtSlider({
+  height: '100vh',
+  dots: true,
+  arrows: true,
+  auto: 3
 })
